@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\u16172\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4505.18\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Users\u16172\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\u16172\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4505.18\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = "C:\Users\u16172\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\u16172\Desktop\AVLTree
+CMAKE_SOURCE_DIR = C:\Users\u16172\Documents\GitHub\AVLTree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\u16172\Desktop\AVLTree\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AVLTree.dir/depend.make
@@ -58,60 +58,30 @@ include CMakeFiles/AVLTree.dir/flags.make
 
 CMakeFiles/AVLTree.dir/main.cpp.obj: CMakeFiles/AVLTree.dir/flags.make
 CMakeFiles/AVLTree.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AVLTree.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\AVLTree.dir\main.cpp.obj -c C:\Users\u16172\Desktop\AVLTree\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AVLTree.dir/main.cpp.obj"
+	C:\MinGW\bin\mingw32-g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\AVLTree.dir\main.cpp.obj -c C:\Users\u16172\Documents\GitHub\AVLTree\main.cpp
 
 CMakeFiles/AVLTree.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVLTree.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\u16172\Desktop\AVLTree\main.cpp > CMakeFiles\AVLTree.dir\main.cpp.i
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\u16172\Documents\GitHub\AVLTree\main.cpp > CMakeFiles\AVLTree.dir\main.cpp.i
 
 CMakeFiles/AVLTree.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVLTree.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\u16172\Desktop\AVLTree\main.cpp -o CMakeFiles\AVLTree.dir\main.cpp.s
-
-CMakeFiles/AVLTree.dir/Node.cpp.obj: CMakeFiles/AVLTree.dir/flags.make
-CMakeFiles/AVLTree.dir/Node.cpp.obj: ../Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AVLTree.dir/Node.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\AVLTree.dir\Node.cpp.obj -c C:\Users\u16172\Desktop\AVLTree\Node.cpp
-
-CMakeFiles/AVLTree.dir/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVLTree.dir/Node.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\u16172\Desktop\AVLTree\Node.cpp > CMakeFiles\AVLTree.dir\Node.cpp.i
-
-CMakeFiles/AVLTree.dir/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVLTree.dir/Node.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\u16172\Desktop\AVLTree\Node.cpp -o CMakeFiles\AVLTree.dir\Node.cpp.s
-
-CMakeFiles/AVLTree.dir/Tree.cpp.obj: CMakeFiles/AVLTree.dir/flags.make
-CMakeFiles/AVLTree.dir/Tree.cpp.obj: ../Tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AVLTree.dir/Tree.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\AVLTree.dir\Tree.cpp.obj -c C:\Users\u16172\Desktop\AVLTree\Tree.cpp
-
-CMakeFiles/AVLTree.dir/Tree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVLTree.dir/Tree.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\u16172\Desktop\AVLTree\Tree.cpp > CMakeFiles\AVLTree.dir\Tree.cpp.i
-
-CMakeFiles/AVLTree.dir/Tree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVLTree.dir/Tree.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\u16172\Desktop\AVLTree\Tree.cpp -o CMakeFiles\AVLTree.dir\Tree.cpp.s
+	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\u16172\Documents\GitHub\AVLTree\main.cpp -o CMakeFiles\AVLTree.dir\main.cpp.s
 
 # Object files for target AVLTree
 AVLTree_OBJECTS = \
-"CMakeFiles/AVLTree.dir/main.cpp.obj" \
-"CMakeFiles/AVLTree.dir/Node.cpp.obj" \
-"CMakeFiles/AVLTree.dir/Tree.cpp.obj"
+"CMakeFiles/AVLTree.dir/main.cpp.obj"
 
 # External object files for target AVLTree
 AVLTree_EXTERNAL_OBJECTS =
 
 AVLTree.exe: CMakeFiles/AVLTree.dir/main.cpp.obj
-AVLTree.exe: CMakeFiles/AVLTree.dir/Node.cpp.obj
-AVLTree.exe: CMakeFiles/AVLTree.dir/Tree.cpp.obj
 AVLTree.exe: CMakeFiles/AVLTree.dir/build.make
 AVLTree.exe: CMakeFiles/AVLTree.dir/linklibs.rsp
 AVLTree.exe: CMakeFiles/AVLTree.dir/objects1.rsp
 AVLTree.exe: CMakeFiles/AVLTree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable AVLTree.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable AVLTree.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AVLTree.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +94,6 @@ CMakeFiles/AVLTree.dir/clean:
 .PHONY : CMakeFiles/AVLTree.dir/clean
 
 CMakeFiles/AVLTree.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\u16172\Desktop\AVLTree C:\Users\u16172\Desktop\AVLTree C:\Users\u16172\Desktop\AVLTree\cmake-build-debug C:\Users\u16172\Desktop\AVLTree\cmake-build-debug C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles\AVLTree.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\u16172\Documents\GitHub\AVLTree C:\Users\u16172\Documents\GitHub\AVLTree C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug\CMakeFiles\AVLTree.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/AVLTree.dir/depend
 

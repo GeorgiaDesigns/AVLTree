@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/u16172/Desktop/AVLTree/Node.cpp
+C:/Users/u16172/Documents/GitHub/AVLTree/Node.h
+Node.inl
+C:/Users/u16172/Documents/GitHub/AVLTree/Node.inl
 
-C:/Users/u16172/Desktop/AVLTree/Tree.cpp
+C:/Users/u16172/Documents/GitHub/AVLTree/Node.inl
 
-C:/Users/u16172/Desktop/AVLTree/main.cpp
+C:/Users/u16172/Documents/GitHub/AVLTree/Tree.h
+Node.h
+C:/Users/u16172/Documents/GitHub/AVLTree/Node.h
+Tree.inl
+C:/Users/u16172/Documents/GitHub/AVLTree/Tree.inl
+
+C:/Users/u16172/Documents/GitHub/AVLTree/Tree.inl
+
+C:/Users/u16172/Documents/GitHub/AVLTree/main.cpp
 iostream
 -
+Tree.h
+C:/Users/u16172/Documents/GitHub/AVLTree/Tree.h
 

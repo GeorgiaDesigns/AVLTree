@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/AVLTree.dir/main.cpp.obj"
-  "CMakeFiles/AVLTree.dir/Node.cpp.obj"
-  "CMakeFiles/AVLTree.dir/Tree.cpp.obj"
   "AVLTree.pdb"
   "AVLTree.exe"
   "AVLTree.exe.manifest"

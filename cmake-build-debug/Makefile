@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\u16172\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4505.18\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "C:\Users\u16172\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\u16172\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4505.18\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = "C:\Users\u16172\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\u16172\Desktop\AVLTree
+CMAKE_SOURCE_DIR = C:\Users\u16172\Documents\GitHub\AVLTree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\u16172\Desktop\AVLTree\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\Users\u16172\Desktop\AVLTree\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\u16172\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4505.18\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"C:\Users\u16172\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\u16172\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.4505.18\bin\cmake\win\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\u16172\AppData\Roaming\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug\CMakeFiles C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\u16172\Desktop\AVLTree\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\u16172\Documents\GitHub\AVLTree\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,60 +122,6 @@ AVLTree/fast:
 	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/build
 .PHONY : AVLTree/fast
 
-Node.obj: Node.cpp.obj
-
-.PHONY : Node.obj
-
-# target to build an object file
-Node.cpp.obj:
-	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Node.cpp.obj
-.PHONY : Node.cpp.obj
-
-Node.i: Node.cpp.i
-
-.PHONY : Node.i
-
-# target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Node.cpp.i
-.PHONY : Node.cpp.i
-
-Node.s: Node.cpp.s
-
-.PHONY : Node.s
-
-# target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Node.cpp.s
-.PHONY : Node.cpp.s
-
-Tree.obj: Tree.cpp.obj
-
-.PHONY : Tree.obj
-
-# target to build an object file
-Tree.cpp.obj:
-	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Tree.cpp.obj
-.PHONY : Tree.cpp.obj
-
-Tree.i: Tree.cpp.i
-
-.PHONY : Tree.i
-
-# target to preprocess a source file
-Tree.cpp.i:
-	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Tree.cpp.i
-.PHONY : Tree.cpp.i
-
-Tree.s: Tree.cpp.s
-
-.PHONY : Tree.s
-
-# target to generate assembly for a file
-Tree.cpp.s:
-	$(MAKE) -f CMakeFiles\AVLTree.dir\build.make CMakeFiles/AVLTree.dir/Tree.cpp.s
-.PHONY : Tree.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -212,12 +158,6 @@ help:
 	@echo ... AVLTree
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Node.obj
-	@echo ... Node.i
-	@echo ... Node.s
-	@echo ... Tree.obj
-	@echo ... Tree.i
-	@echo ... Tree.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -4,9 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/u16172/Desktop/AVLTree/Node.cpp" "C:/Users/u16172/Desktop/AVLTree/cmake-build-debug/CMakeFiles/AVLTree.dir/Node.cpp.obj"
-  "C:/Users/u16172/Desktop/AVLTree/Tree.cpp" "C:/Users/u16172/Desktop/AVLTree/cmake-build-debug/CMakeFiles/AVLTree.dir/Tree.cpp.obj"
-  "C:/Users/u16172/Desktop/AVLTree/main.cpp" "C:/Users/u16172/Desktop/AVLTree/cmake-build-debug/CMakeFiles/AVLTree.dir/main.cpp.obj"
+  "C:/Users/u16172/Documents/GitHub/AVLTree/main.cpp" "C:/Users/u16172/Documents/GitHub/AVLTree/cmake-build-debug/CMakeFiles/AVLTree.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
