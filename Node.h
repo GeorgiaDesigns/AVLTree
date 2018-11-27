@@ -6,18 +6,18 @@ class Node {
 private:
     Node<T>* left;
     Node<T>* right;
-    int balanceFactor;
+    int height;
     T info;
 public:
     Node<T>* getLeft();
     Node<T>* getRight();
-    int getBalanceFactor();
+    int getHeight();
     T getinfo();
     void setLeft(Node<T>*);
     void setRight(Node<T>*);
-    void setBalanceFactor(int);
+    void setHeight(int);
     void setinfo(T);
-    Node(Node<T>* left, Node<T>* right, int balanceFactor, T info);
+    Node(Node<T>* left, Node<T>* right, T info);
 };
 
 #include "Node.inl"

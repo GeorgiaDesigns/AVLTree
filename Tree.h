@@ -8,6 +8,7 @@ class Tree {
 public:
     void insert(const T &info);
     void remove(const T &info);
+    bool isLeaf();
     void balance();
 
     Tree();

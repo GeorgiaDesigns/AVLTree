@@ -9,11 +9,6 @@ Node<T> *Node<T>::getRight() {
 }
 
 template<typename T>
-int Node<T>::getBalanceFactor() {
-    return this->balanceFactor;
-}
-
-template<typename T>
 void Node<T>::setLeft(Node<T> *data) {
     this->left = data;
 }
@@ -24,13 +19,13 @@ void Node<T>::setRight(Node<T> *data) {
 }
 
 template<typename T>
-void Node<T>::setBalanceFactor(int factor) {
-    this->balanceFactor = factor;
+T Node<T>::getinfo() {
+    return this->info;
 }
 
 template<typename T>
-T Node<T>::getinfo() {
-    return this->info;
+int Node<T>::getHeight() {
+    return this->height;
 }
 
 template<typename T>
@@ -39,11 +34,24 @@ void Node<T>::setinfo(T data) {
 }
 
 template<typename T>
-Node<T>::Node(Node<T> *left, Node<T> *right, int balanceFactor, T info) {
+void Node<T>::setHeight(int h) {
+    this->height = h;
+}
+
+template<typename T>
+Node<T>::Node(Node<T> *left, Node<T> *right, int height, T info) {
     setLeft(left);
     setRight(right);
-    setBalanceFactor(balanceFactor);
+    setHeight(height);
     setinfo(info);
 }
+
+//template<typename T>
+//Override
+//Node<T>::Node(T info) {
+//    setLeft(left);
+//    setRight(right);
+//    setinfo(info);
+//}
 
 

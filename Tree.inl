@@ -1,9 +1,15 @@
 
 template<typename T>
-void Tree<T>::insert(const T &info) {
+void Tree<T>::insert(Node<root>, int data) {
     if (this->root == nullptr) {
-        Node<T>* novoNo  = new Node<T>(nullptr, nullptr, 0, info);
-        this->root = novoNo;
+        Node<T>* newNode  = new Node<T>(nullptr, nullptr, data);
+        this->root = newNode;
+    }
+
+    if(data <= root->getinfo()){
+        root->getRight() = insert(root->getLeft(),data);
+    }else{
+        root->getRight() = insert(root->getRight(),data);
     }
 
     balance();
@@ -11,7 +17,19 @@ void Tree<T>::insert(const T &info) {
 }
 
 template<typename T>
+bool Tree<T>::isLeaf() {
+    return false;
+}
+
+template<typename T>
 void Tree<T>::balance() {
+
+    int balanceFactor = (root->getLeft())->getHeight() - (root->getRight())->getHeight();
+
+    if (balanceFactor > 1){
+        if()
+          //  https://www.youtube.com/watch?v=rbg7Qf8GkQ4
+    }
 
 }
 
