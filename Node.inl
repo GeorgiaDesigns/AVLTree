@@ -24,34 +24,52 @@ T Node<T>::getinfo() {
 }
 
 template<typename T>
-int Node<T>::getHeight() {
-    return this->height;
-}
-
-template<typename T>
 void Node<T>::setinfo(T data) {
     this->info = data;
 }
 
 template<typename T>
-void Node<T>::setHeight(int h) {
-    this->height = h;
+int Node<T>::factor() {
+    if(this->isLeaf())
+        return 0;
+
+    int leftHeight = height(this->left);
+    int rightHeight = height(this->right);
+
+    return leftHeight - rightHeight;
 }
 
 template<typename T>
-Node<T>::Node(Node<T> *left, Node<T> *right, int height, T info) {
-    setLeft(left);
-    setRight(right);
-    setHeight(height);
-    setinfo(info);
+int Node<T>::height(Node<T> *n) {
+    if (n == nullptr)
+        return 0;
+
+    if (n->isLeaf())
+        return 1;
+
+    return std::max(height(n->left), height(n->right)) + 1;
 }
 
-//template<typename T>
-//Override
-//Node<T>::Node(T info) {
-//    setLeft(left);
-//    setRight(right);
-//    setinfo(info);
-//}
+template<typename T>
+Node<T> *Node<T>::next(const T &info) {
+    if (info > this->info)
+        return this->right;
+    else
+        return this->left;
+}
+
+template<typename T>
+bool Node<T>::isLeaf() {
+    return this->right == nullptr && this->left == nullptr;
+}
+
+template<typename T>
+Node<T>::Node(const T &info) {
+    this->info = info;
+    this->left = nullptr;
+    this->right = nullptr;
+}
+
+
 
 

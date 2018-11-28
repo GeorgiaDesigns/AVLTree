@@ -6,18 +6,20 @@ class Node {
 private:
     Node<T>* left;
     Node<T>* right;
-    int height;
+    int height(Node<T> *n);
     T info;
 public:
     Node<T>* getLeft();
     Node<T>* getRight();
-    int getHeight();
     T getinfo();
+    Node<T>* next(const T &info);
+    bool isLeaf();
+    int factor();
     void setLeft(Node<T>*);
     void setRight(Node<T>*);
-    void setHeight(int);
     void setinfo(T);
-    Node(Node<T>* left, Node<T>* right, T info);
+
+    explicit Node(const T &info);
 };
 
 #include "Node.inl"
